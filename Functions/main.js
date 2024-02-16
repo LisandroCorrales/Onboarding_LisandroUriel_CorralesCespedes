@@ -129,11 +129,36 @@ let mensajeDia = typeOfDay(4);
 console.log(mensajeDia);
 
 //Exercise 3
-//
-//
-//
-//
-//
+
+function enterPersonalInformation(){
+    let nombre = prompt(`Enter your name: `);
+    while (nombre == "") {
+        nombre = prompt(`Enter your name: `);
+    }
+
+    let apellido = prompt(`Enter your last name: `);
+    while (apellido == "") {
+        apellido = prompt(`Enter your last name: `);
+    }
+
+    let edad = Number(prompt(`Enter your age: `));
+    while (!edad ) {
+        edad = prompt(`Enter your age: `);
+    }
+
+    let personalInfo = {
+        firstName: nombre,
+        lastName: apellido,
+        age: edad
+    }
+
+    console.log(`Personal Information:`);
+    console.log("Name:", personalInfo.firstName);
+    console.log("Last Name:", personalInfo.lastName);
+    console.log("Age:", personalInfo.age);
+}
+
+enterPersonalInformation();
 
 //Exercise 4
 /*
