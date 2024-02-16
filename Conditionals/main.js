@@ -41,11 +41,16 @@ if (date1 > date2) {
 }
 
 //Exercise 5
-//
-//
-//
-//
-//
+let fecha1 = "2018-10-7";
+let fecha2 = "2018-2-17";
+
+if(fecha1 > fecha2){
+    console.log(`La fecha ${fecha1} es mayor que ${fecha2}`);
+} else if(fecha2 > fecha1){
+    console.log(`La fecha ${fecha2} es mayor que ${fecha1}`);
+} else{
+    console.log("Las fechas son iguales");
+}
 
 
 
@@ -158,12 +163,55 @@ if (edad <= 12) {
 */
 
 //Exercise 6
-//
-//
-//
-//
+/*
+let option = Number(prompt("Enter a number from 1 to 3"));
+let num = Number(prompt("Enter a number to know more of it"));
+
+switch (option) {
+    case 1: 
+        alert(`The number entered is ${num}`);
+        break;
+    case 2: 
+        alert(`Twice the number entered is ${num *2}`);
+        break;
+    case 3: 
+        alert(`Three times the number entered is ${num*3}`);
+        break;
+    default:
+        alert(`That value is not allowed`);
+        break;
+}
+*/
 
 //--------- Difficulty Level: High ---------------
 //Exercise 1
+let nameEntered = prompt("Ingrese su nombre:");
+let pass = prompt("Ingrese si tiene pase vip o normal:");
+let myName = "Lisandro";
 
+let pass1 = "vip";
+let pass2 = "normal";
+
+if (nameEntered == myName || pass == pass1) {
+    alert(`¡Bienvenido/a!`);
+} else if (pass === pass2) {
+    let tieneEntrada = prompt(`Tiene una entrada para usar? (si o no):`);
+    if (tieneEntrada == "si") {
+        alert(`¡Bienvenido/a!`);
+    } else {
+        let quiereComprar = prompt(`Desea comprar una entrada? (si o no):`);
+        if (quiereComprar === "si") {
+            let dineroDisponible = Number(prompt("Ingrese su dinero disponible:"));
+            if (dineroDisponible >= 1000) {
+                alert(`Venta realizada. ¡Bienvenido/a!`);
+            } else {
+                alert(`No tiene suficiente dinero para la compra. Hasta luego!`);
+            }
+        } else {
+            alert(`Hasta luego!`);
+        }
+    }
+ } else {
+    alert(`Hasta luego!`);
+ }
 
